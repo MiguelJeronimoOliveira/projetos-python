@@ -1,0 +1,11 @@
+#Contador de palavras
+novoTexto = input("Digite o novo texto que voce deseja adicionar: ")
+
+with open("arquivo.txt", "w") as arquivo:
+    arquivo.write(novoTexto)
+
+
+with open("arquivo.txt", "r") as arquivo:
+    conteudo = arquivo.read()
+    print(len(conteudo.split()))
+
